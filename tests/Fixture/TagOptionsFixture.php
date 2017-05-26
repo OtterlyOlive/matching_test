@@ -39,7 +39,7 @@ class TagOptionsFixture extends TestFixture
     public $records = [
         [
             'id' => '53f77416-adf6-4beb-863d-49212cf862be',
-            'name' => 'Lorem ipsum dolor sit amet',
+            'name' => 'display_tag',
             'created' => '2017-05-26 09:53:37',
             'modified' => '2017-05-26 09:53:37'
         ],

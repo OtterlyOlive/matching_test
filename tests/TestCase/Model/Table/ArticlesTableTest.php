@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Model\Table;
 
 use App\Model\Table\ArticlesTable;
+use Cake\ORM\Query;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
@@ -28,7 +29,9 @@ class ArticlesTableTest extends TestCase
         'app.icons',
         'app.articles_icons',
         'app.tags',
-        'app.articles_tags'
+        'app.articles_tags',
+	    'app.tags_tag_options',
+	    'app.tag_options'
     ];
 
     /**
@@ -73,5 +76,18 @@ class ArticlesTableTest extends TestCase
     public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    public function testPagination() {
+	    $table = TableRegistry::get('Articles');
+
+	    // Find all articles
+	    $query = $table->find();
+
+	    // Mimic the Pagination by getting content and then Counting, on the same query
+	    $content = $query->toArray();
+	    $count = $query->count();
+
+	    $this->assertEquals($count, 1);
     }
 }

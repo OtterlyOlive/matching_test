@@ -44,8 +44,8 @@ class TagsTagOptionsFixture extends TestFixture
     public $records = [
         [
             'id' => '58bf186c-192f-4773-b0f4-e69bbb3cb549',
-            'tag_id' => '349741fc-76d0-4fd0-b1c9-6f3bf2f6d50a',
-            'tag_option_id' => 'ca59a246-b971-4d37-8af2-2cb7d3c05a16',
+            'tag_id' => '0460847a-46fa-40c6-9c94-4a368a3a966c',
+            'tag_option_id' => '53f77416-adf6-4beb-863d-49212cf862be',
             'created' => '2017-05-26 09:53:37',
             'modified' => '2017-05-26 09:53:37'
         ],

@@ -44,8 +44,8 @@ class ArticlesTagsFixture extends TestFixture
     public $records = [
         [
             'id' => '64fadd3c-78aa-40ac-b877-00796367c4ee',
-            'article_id' => '506e6742-a2d1-4ca1-9513-8fc1c6444bc5',
-            'tag_id' => 'c4b18728-5beb-4954-b3a7-300034e2494b',
+            'article_id' => '1c5b3e3a-62e2-4ca5-84af-50cbd8cf38ef',
+            'tag_id' => '0460847a-46fa-40c6-9c94-4a368a3a966c',
             'created' => '2017-05-26 09:53:36',
             'modified' => '2017-05-26 09:53:36'
         ],
