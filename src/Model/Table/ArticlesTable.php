@@ -80,7 +80,9 @@ class ArticlesTable extends Table
 	public function beforeFind(Event $event, Query $query) {
 		$query->matching(
 			'Tags', function(Query $q) {
-				return $q->matching('TagOptions', function(Query $i) {
+				return $q
+					->where(['Tags.name' => 'Good'])
+					->matching('TagOptions', function(Query $i) {
 					return $i->where(['TagOptions.name' => 'display_tag']);
 				});
 			})
