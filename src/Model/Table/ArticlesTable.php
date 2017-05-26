@@ -83,12 +83,12 @@ class ArticlesTable extends Table
 				return $q
 					->where(['Tags.name' => 'Good'])
 					->matching('TagOptions', function(Query $i) {
-					return $i->where(['TagOptions.name' => 'display_tag']);
+						return $i->where(['TagOptions.name' => 'display_tag']);
+					});
+				})
+				->matching('Icons', function(Query $q) {
+					return $q->where(['Icons.icon' => 'sad']);
 				});
-			})
-			->matching('Icons', function(Query $q) {
-				return $q->where(['Icons.icon' => 'sad']);
-			});
 
 		return $event;
 	}
